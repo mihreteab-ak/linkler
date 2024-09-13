@@ -1,11 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>linkler</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  <link rel="stylesheet" href="{% static 'css/mediaqueries.css'%}">
+  <script src="{% static 'javascript/script.js'%}"></script>
 </head>
 <body scroll="no">
   <header>
@@ -27,11 +29,11 @@
         <li id="signup-login">
           <div class="btn-container">
             <button>Sign up</button>
-            <img id="sign-up-in-1" src="./assets/sign-up-in.png" alt="sign in and sign up arrow"> 
+            <img id="sign-up-in-1" src="{%static 'assets/sign-up-in.png'%}" alt="sign in and sign up arrow"> 
           </div>
           <div class="btn-container">
             <button>Log in</button>
-            <img id="sign-up-in-2" src="./assets/sign-up-in.png" alt="sign in and sign up arrow"> 
+            <img id="sign-up-in-2" src="{% static 'assets/sign-up-in.png' %}" alt="sign in and sign up arrow"> 
           </div>
         </li>
       </ul>
@@ -60,11 +62,11 @@
         <li id="signup-login">
           <div class="btn-container">
             <button>Sign up</button>
-            <img id="sign-up-in-1" src="./assets/sign-up-in.png" alt="sign in and sign up arrow"> 
+            <img id="sign-up-in-1" src="{%static 'assets/sign-up-in.png'%}" alt="sign in and sign up arrow"> 
           </div>
           <div class="btn-container">
             <button>Log in</button>
-            <img id="sign-up-in-2" src="./assets/sign-up-in.png" alt="sign in and sign up arrow"> 
+            <img id="sign-up-in-2" src="{%static 'assets/sign-up-in.png'%}" alt="sign in and sign up arrow"> 
           </div>
         </li>
       </div>
@@ -82,10 +84,11 @@
         </p>
       </div>
       <div class="img-container">
-        <img src="./assets/travellers-pic-1.png" alt="travellers hiking">
+          <img src="{% static 'assets/travellers-pic-1.png'%}" alt="travellers hiking">
       </div>
     </div>
   </main>
   <script src="script.js"></script>
 </body>
 </html>
+
