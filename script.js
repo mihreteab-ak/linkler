@@ -4,4 +4,6 @@ function toggleMenu() {
 
   menu.classList.toggle("open")
   icon.classList.toggle("open")
+
+  document.querySelector(".container").classList.toggle("blur")
 }
